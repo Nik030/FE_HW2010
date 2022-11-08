@@ -1,141 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bension car refueling</title>
 
     <style>
-                * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-                }
+      .header,
+      .body {
+        max-width: 1100px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        max-width: 1000px;
+        justify-content: center;
+        position: fixed;
+      }
 
+      .Header {
+        display: flex;
+        padding: 30px 00px 5px 20px;
+        justify-content: space-between;
+        margin-left: 20px;
+        font-size: large;
+      }
+      .menu {
+        padding: 5px;
+        gap: 40px;
+      }
 
-        .Header {
-            display: flex; 
-            padding: 30px 30px 0px 50px ; 
-            justify-content: space-between; 
-            margin-left: 00px;  
-            font-size: larger;
+      button {
+        background: rgb(61, 172, 115);
+        color: #fff;
+        padding: 0rem 1.5rem 0rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 50px;
+        width: 120px;
+        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
+
+      .main {
+        display: flex;
+      }
+
+      img {
+        padding: 0px 0px;
+        display: flex;
+      }
+
+      
+
+      .car {
+        padding-left: 300px;
+        padding-top: 20px;
+        padding-bottom: 300px;
+        position: absolute;
+      }
+
+      h1 {
+        margin-right: 0%;
+        max-width: 350px;
+        padding: 150px 0px 0px 50px;
+        font-size: 50px;
+        border: #fff;
+      }
+      h2 {
+        max-width: 300px;
+        font-size: 15px;
+        font-weight: 100;
+        padding-left: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .buttons {
+        display: inline;
+      }
+      .button1 {
+        margin-left: 10px;
+        background: rgb(0, 0, 0);
+        color: #fff;
+        padding: 0.5rem 1.5rem 0.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 50px;
+        width: 120px;
+        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
+      .button2 {
+        margin-left: 20px;
+        background: rgb(0, 0, 0);
+        color: #fff;
+        padding: 0.5rem 1.5rem 0.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 50px;
+        width: 120px;
+        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
+
+      .Social {
+        padding-top: 30px;
+        padding-left: 20px;
+      }
+
+      .footer {
+        display: flex;
+        max-width: 970px;
+        padding-left: 20px;
+        padding-top: 30px;
+        gap: 50px;
+
+        justify-content: center;
+      }
+      .item {
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .Time,
+      .Address,
+      .PayCard {
+        padding-left: 70px;
+      }
+
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
         }
-
-        
-
-        button {
-             
-            background:rgb(61, 172, 115);
-            color: #fff;
-            padding: 0rem 1.5rem 0rem ;
-            font-size: 1rem;
-            border: none;
-            border-radius: 50px;
-            width: 120px;
-            height: 40px;
-            box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            cursor: pointer;
-            transition: all .5s ease-out
-
+        .logo {
+          padding-left: 70px;
         }
-
-        .main {
-            display: flex;
+        .socialmedia {
+          display: none;
         }
-
-        img {   
-            padding: 0px 0px;      
-        }
-
-        .car {
-            padding-left:  300px;
-            padding-top: 20px;
-            padding-bottom: 300px;
-            position: absolute;
-            
-        }
-
-
-
-        h1 {
-            margin-right: 0%;
-            max-width:350px;
-            padding: 150px 0px 0px 50px;
-            font-size: 50px;
-            border: #fff;
-        }
-        h2{
-            max-width: 300px;
-            font-size: 15px;
-            font-weight: 100;
-            padding-left: 50px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
         .buttons {
-            display: inline;
-
+          padding-left: 30px;
         }
-        button1 {
-            margin-left: 10px;
-            background:rgb(0, 0, 0);
-            color: #fff;
-            padding: 0.5rem 1.5rem 0.5rem ;
-            font-size: 1rem;
-            border: none;
-            border-radius: 50px;
-            width: 120px;
-            height: 40px;
-            box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            cursor: pointer;
-            transition: all .5s ease-out
-        }
-        button2 {
-            margin-left: 20px;
-            background:rgb(0, 0, 0);
-            color: #fff;
-            padding: 0.5rem 1.5rem 0.5rem ;
-            font-size: 1rem;
-            border: none;
-            border-radius: 50px;
-            width: 120px;
-            height: 40px;
-            box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            cursor: pointer;
-            transition: all .5s ease-out
-        }
-
-        .Social {
-            padding-top: 30px;
-            padding-left: 20px;
-        }
-
         .footer {
-            display: flex;
-            max-width: 970px;
-            padding-left: 20px;
-            padding-top: 30px;
-
-            justify-content: center;   
+          display: block;
+          gap: 10px;
+          max-width: 300px;
+          padding-top: 20px;
+          
         }
-        .item {
-            padding-left: 10px;
-            padding-right: 10px;
-            border: 1px solid black;
-            border-radius: 20px; 
-
-        }
-        .subtitle {
-            font-size: 20px;
-            
-
-            
-        }
-        .Time, .Address, .PayCard {
-            padding-left: 70px;
+        .car {
+          display: none;
+          
         }
 
 
@@ -143,128 +176,89 @@
 
 
 
-
-
-
-
+      }
     </style>
-</head>
-<body>
-    
-    <div class="Header">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="Header">
+      <div class="logo">
+        <img src="BensionLogo.png"  />
+      </div>
 
-        <div class="img">
-        <img src="BensionLogo.png" alt="">
-        </div>
+      <div class="menu">
+      <a href="">Home</a>
+      <a href="">Feature</a>
+      <a href="">Screen</a>
+      <a href="">Pricing</a>
+      <a href="">Team</a>
+      <a href="">Question</a>
+      
 
-        <a href="">Home</a>
-        <a href="">Feature</a>
-        <a href="">Screen</a>
-        <a href="">Pricing</a>
-        <a href="">Team</a>
-        <a href="">Question</a>
-
-        <button onclick="toggleMenu()">Get Started</button>
-
-        
-     </div>
+      <button onclick="toggleMenu()">Get Started</button>
+    </div>
+      </div>
 
     <div>
+      <div class="main">
+        <h1>Refueling a car at your address</h1>
 
-        <div class="main">
-     <h1>
-        Refueling a car at your address
-     </h1>
+        <div class="car">
+          <figure>
+            <img src="Car.png" alt="" />
+          </figure>
+        </div>
+      </div>
 
-
-     <div class="car">
-        <figure>
-        <img src="Car.png" alt="">
-        </figure>
-     </div>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
     </div>
-
-    <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-     </h2>
-    </div>
-
 
     <div class="buttons">
-        <button2 onclick="PlayMarkt()">PlayMarkt</button2>
-    <button1 onclick="Applesore()">Apple Store</button1>
+      <button2 onclick="PlayMarkt()">PlayMarkt</button2>
+      <button1 onclick="Applesore()">Apple Store</button1>
     </div>
 
     <div class="Social">
-        <figure>
-        <img src="SocialMedia.png" alt="">
+      <figure class="socialmedia">
+        <img src="SocialMedia.png" alt="" />
+      </figure>
+    </div>
+
+    <div class="footer">
+      <div class="item">
+        <figure class="Time">
+          <img src="Time.png" />
         </figure>
-     </div>
 
+        <h2 class="subtitle">Specified order</h2>
 
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
 
-     <div class="footer">
+      <div class="item">
+        <figure class="Address">
+          <img src="Address.png" />
+        </figure>
 
-        <div class="item">
-            <figure class="Time">
-                <img src="Time.png">
-            </figure>
+        <h2 class="subtitle">Delivery</h2>
 
-            <h2 class="subtitle">Specified order</h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
 
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            
-        </div>
+      <div class="item">
+        <figure class="PayCard">
+          <img src="PayCard.png" />
+        </figure>
 
-        <div class="item">
-            <figure class="Address">
-                <img src="Address.png">
-            </figure>
+        <h2 class="subtitle">Payment types</h2>
 
-            <h2 class="subtitle">Delivery</h2>
-
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            
-        </div>
-
-        <div class="item">
-            <figure class="PayCard">
-                <img src="PayCard.png">
-            </figure>
-
-            <h2 class="subtitle">Payment types</h2>
-
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     </div>
-
-
-
-     
-
-     
-
-
-
-
-
-
-</body>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    </div>
+  </body>
 </html>
+
+<!-- :root { -->
+  <!-- -- main-color: black -->
+
