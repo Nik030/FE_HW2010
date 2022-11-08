@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Menu</title>
+</head>
+    <style>
+        :root {
+            --sidebar-width: 250px;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -15px;
+            height: 100%;
+            width: var(--sidebar-width);
+            background: darkcyan;
+            border-radius: 15px;
+            transform: translateX(calc(var(--sidebar-width)* -1));
+            transition: all 0.5s ease-out;
+        }
+        .menu--open {
+            transform: none;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            background:blue;
+            color: #fff;
+            padding: 0rem 1.5rem 0rem ;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            width: 120px;
+            height: 40px;
+            box-shadow: rgba(0, 0, 0, 0.39) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            cursor: pointer;
+            transition: all .5s ease-out
+        }
+        button:hover {
+                background: rgb(0, 0, 161)
+
+                
+        }
+        @media (max-width: 768px) {
+            body {
+                margin: 2rem;
+            }
+            p {
+            line-height: 1.5;
+        }    
+        }
+
+
+
+
+    </style>
+
+
+<body>
+    <aside class="menu">
+    </aside>
+
+    <header>
+         <h1>
+             About company
+         </h1>
+
+         <button onclick="toggleMenu()">Menu</button>
+    </header>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, rem. Quis unde qui accusamus labore culpa quidem placeat delectus accusantium quia eius perspiciatis ipsum pariatur vitae deserunt perferendis tenetur, voluptatum a commodi ex eos. Voluptatem explicabo, nulla nesciunt neque nam tempore! Cum optio perspiciatis quos natus! Aliquid ipsa quibusdam accusamus, nisi dolores ducimus minima vel ullam ipsam deserunt fugit quis libero laboriosam non sit. Quae consequuntur iure delectus illo nihil, eligendi voluptatem eius unde quaerat maiores nostrum, rem veniam placeat deleniti distinctio. Et cumque odio nostrum. Voluptates soluta inventore eos, quaerat illo, reiciendis rem fugit dolore recusandae non omnis fuga ducimus, assumenda dolor. Doloremque blanditiis atque, cum error perspiciatis itaque saepe. Nulla maxime dolor amet neque tempora tempore quidem voluptas sapiente illo debitis? Veniam iste incidunt minima expedita officia dicta dolore? Error dolor pariatur perferendis obcaecati inventore sunt consequatur labore quaerat repudiandae nostrum repellat, natus omnis quisquam a ullam praesentium, eligendi voluptate fugit est. Asperiores temporibus recusandae repudiandae quia laudantium placeat inventore veritatis tenetur nesciunt. Excepturi reprehenderit distinctio optio ratione sapiente! Libero aliquam voluptates temporibus accusamus fugiat, eveniet cupiditate commodi, sequi ea quo perspiciatis iusto! Similique cum officia earum ut voluptas iusto, aut maxime magni, consectetur error mollitia tenetur porro. Laudantium voluptatibus odio placeat omnis autem ex soluta hic quasi labore error ratione voluptas magni iste commodi, illo repellendus optio architecto atque vel officia ipsam mollitia unde accusantium numquam. Aspernatur eius accusamus vel. Tempore, velit natus neque ipsa quod ex accusantium veritatis dolore blanditiis unde culpa repellat, aut delectus eaque architecto, reiciendis libero excepturi! Voluptate earum, quidem soluta voluptatibus maiores praesentium vel porro dolorem. Voluptas, libero quo nulla eaque unde, quas quaerat minima error aliquam eligendi itaque illum atque sit porro quisquam minus accusamus totam voluptatem similique laborum quidem rem dolorum molestiae. Temporibus laborum cumque in provident! Modi voluptatum iste voluptates aspernatur excepturi corrupti nam mollitia eligendi! Rerum nobis modi eum assumenda, ad, autem quas asperiores nostrum blanditiis reiciendis vel odio possimus unde eos laudantium odit illum distinctio at quae molestiae officiis maxime a. Reiciendis, est accusamus? Culpa expedita similique itaque enim in, architecto ullam esse vero ducimus est quisquam fuga, voluptatibus tempore, earum atque adipisci quia eos commodi. Voluptatum, esse earum. Unde consequuntur ut porro accusamus laudantium iure aperiam, amet dicta sapiente debitis dolor soluta corporis repudiandae, perferendis, expedita a! Quae reprehenderit voluptate molestias ducimus, exercitationem sit facere in similique dolor id quod nobis molestiae, dolorem sequi consectetur assumenda sunt commodi obcaecati dicta ullam quo labore. Officia minima explicabo impedit quae asperiores reprehenderit quidem, magnam a modi, excepturi eveniet maiores. Doloremque, exercitationem? Rem eum quam et maiores accusantium nihil pariatur cum vel. Tempore magnam impedit ducimus ea necessitatibus voluptate nemo dicta doloribus. Rerum fuga iure hic ex magni culpa, labore rem praesentium aperiam harum cumque a, exercitationem quo dolorum! Impedit laudantium praesentium nesciunt ex quae dolor deserunt quis mollitia ratione. Repellendus incidunt dolorum debitis blanditiis modi magnam qui officia atque, aperiam sit, fuga id molestias! Explicabo nihil numquam non blanditiis, dolor autem assumenda commodi ea facere obcaecati consectetur vitae?
+    </p>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu--open');
+        }
+    </script>
+
+
+
+</body>
+</html>
