@@ -40,9 +40,17 @@
       }
       .main {
         grid-area: main;
-      } 
+      }
       .footer {
         grid-area: footer;
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        .main {
+          margin-left: -110px;
+        }
       }
     </style>
   </head>
