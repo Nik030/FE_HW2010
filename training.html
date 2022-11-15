@@ -8,53 +8,56 @@
 
     <style>
       * {
-        margin: -2px;
-        padding: 50px;
+        margin: 0px;
+        padding: 0px;
         box-sizing: border-box;
       }
 
       @media (max-width: 768px) {
+        html,
+        body,
         .wrapper {
-          background-color: blue;
-          max-height: 1000px;
-          border-radius: 40px;
-          font-size: 20px;
+          height: 100%;
         }
-       .buttons {
-        display: block;
-       }
-       .button1 {
-        background: pink;
-        border-radius: 50px;
-        padding: 10px;
-        max-width: 250px;
-       }
-       .button2 {
-        margin-top: 10px;
-        background: pink;
-        border-radius: 50px;
-        padding: 5px;
-        max-width: 150px;
-       }
-            
-        
+        .wrapper {
+          width: 280px;
+          background: #1630c2;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 20px;
+          padding: 0 40px 0 20px;
+          border-radius: 30px;
+        }
+        h3 {
+          padding-bottom: 50px;
+        }
+      }
+      .newAccount {
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #2230ab;
+        background: #ffd3e9;
+        border-style: none;
+        font-weight: 600;
+      }
+      .signIn {
+        border-radius: 25px;
+        padding: 10px 20px;
+        border-color: white;
+        background: #1630c2;
+        color: white;
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <main>
-        <h1>Smart Insurance here</h1>
-
-        <h2>Find all tour needs faster than ever</h2>
-      </main>
-      <div class="button1">
-
-        <button2 onclick="account()">New Account  </button2>
-      </div>
-      <div class="button2">
-        <button1 onclick="SingIn()">Sign In  </button1>
-    </div>
+      <h1>Smart Insurance here!</h1>
+      <h3>Find all tour needs faster than ever</h3>
+      <button class="newAccount">New Account</button>
+      <button class="signIn">Sign in</button>
     </div>
   </body>
 </html>
